@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15339DB1229B2422002105B2 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15339DAF229B2422002105B2 /* Coin.swift */; };
+		15339DB2229B2422002105B2 /* CoinsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15339DB0229B2422002105B2 /* CoinsData.swift */; };
 		155F9D4222821FC8001CB901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D4122821FC8001CB901 /* AppDelegate.swift */; };
 		155F9D4422821FC8001CB901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D4322821FC8001CB901 /* ViewController.swift */; };
 		155F9D4722821FC8001CB901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155F9D4522821FC8001CB901 /* Main.storyboard */; };
@@ -20,6 +22,9 @@
 		155F9D6722821FCA001CB901 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D6622821FCA001CB901 /* ExtensionDelegate.swift */; };
 		155F9D6922821FCA001CB901 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D6822821FCA001CB901 /* ComplicationController.swift */; };
 		155F9D6B22821FCB001CB901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155F9D6A22821FCB001CB901 /* Assets.xcassets */; };
+		495371916392DADFBF13ECD1 /* Pods_BitPrice_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D828C29EA03D742764B90586 /* Pods_BitPrice_WatchKit_App.framework */; };
+		D6F8A918F1909F2A0B427A71 /* Pods_BitPrice_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED3A866B525889EA10E922E /* Pods_BitPrice_WatchKit_Extension.framework */; };
+		DF9D9FDE42EA48360A6F269E /* Pods_BitPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFDB1FA3026578811856060 /* Pods_BitPrice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15339DAF229B2422002105B2 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		15339DB0229B2422002105B2 /* CoinsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsData.swift; sourceTree = "<group>"; };
 		155F9D3E22821FC8001CB901 /* BitPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		155F9D4122821FC8001CB901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		155F9D4322821FC8001CB901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +89,15 @@
 		155F9D6822821FCA001CB901 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		155F9D6A22821FCB001CB901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155F9D6C22821FCB001CB901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED3A866B525889EA10E922E /* Pods_BitPrice_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPrice_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		479F9DC370C4CCB76ABE035D /* Pods-BitPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.release.xcconfig"; path = "Target Support Files/Pods-BitPrice/Pods-BitPrice.release.xcconfig"; sourceTree = "<group>"; };
+		5F1EA97A57127C05C05C8C0B /* Pods-BitPrice WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-BitPrice WatchKit App/Pods-BitPrice WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		61EB5AC4498535E2E1E7D3AA /* Pods-BitPrice WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-BitPrice WatchKit Extension/Pods-BitPrice WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		837C57789A54D4FEF475F755 /* Pods-BitPrice WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-BitPrice WatchKit Extension/Pods-BitPrice WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		BC76F2A226CED803F693F14D /* Pods-BitPrice WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-BitPrice WatchKit App/Pods-BitPrice WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		D828C29EA03D742764B90586 /* Pods_BitPrice_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPrice_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEFDB1FA3026578811856060 /* Pods_BitPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F293B001159658575F3F4E02 /* Pods-BitPrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.debug.xcconfig"; path = "Target Support Files/Pods-BitPrice/Pods-BitPrice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9D9FDE42EA48360A6F269E /* Pods_BitPrice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +113,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F8A918F1909F2A0B427A71 /* Pods_BitPrice_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E3E27A9831C97A2584061B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495371916392DADFBF13ECD1 /* Pods_BitPrice_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +135,8 @@
 				155F9D5422821FC9001CB901 /* BitPrice WatchKit App */,
 				155F9D6322821FCA001CB901 /* BitPrice WatchKit Extension */,
 				155F9D3F22821FC8001CB901 /* Products */,
+				B3958DE7C3B27FF0CD0A2C9D /* Pods */,
+				FA75E110D1DD1A3225628D55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +176,8 @@
 		155F9D6322821FCA001CB901 /* BitPrice WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				15339DAF229B2422002105B2 /* Coin.swift */,
+				15339DB0229B2422002105B2 /* CoinsData.swift */,
 				155F9D6422821FCA001CB901 /* InterfaceController.swift */,
 				155F9D6622821FCA001CB901 /* ExtensionDelegate.swift */,
 				155F9D6822821FCA001CB901 /* ComplicationController.swift */,
@@ -157,6 +187,30 @@
 			path = "BitPrice WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		B3958DE7C3B27FF0CD0A2C9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F293B001159658575F3F4E02 /* Pods-BitPrice.debug.xcconfig */,
+				479F9DC370C4CCB76ABE035D /* Pods-BitPrice.release.xcconfig */,
+				BC76F2A226CED803F693F14D /* Pods-BitPrice WatchKit App.debug.xcconfig */,
+				5F1EA97A57127C05C05C8C0B /* Pods-BitPrice WatchKit App.release.xcconfig */,
+				61EB5AC4498535E2E1E7D3AA /* Pods-BitPrice WatchKit Extension.debug.xcconfig */,
+				837C57789A54D4FEF475F755 /* Pods-BitPrice WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA75E110D1DD1A3225628D55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDB1FA3026578811856060 /* Pods_BitPrice.framework */,
+				D828C29EA03D742764B90586 /* Pods_BitPrice_WatchKit_App.framework */,
+				1ED3A866B525889EA10E922E /* Pods_BitPrice_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 155F9D7722821FCB001CB901 /* Build configuration list for PBXNativeTarget "BitPrice" */;
 			buildPhases = (
+				34076828FE43701CD0040039 /* [CP] Check Pods Manifest.lock */,
 				155F9D3A22821FC8001CB901 /* Sources */,
 				155F9D3B22821FC8001CB901 /* Frameworks */,
 				155F9D3C22821FC8001CB901 /* Resources */,
@@ -183,8 +238,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 155F9D7322821FCB001CB901 /* Build configuration list for PBXNativeTarget "BitPrice WatchKit App" */;
 			buildPhases = (
+				71A4CB7CF380ABAD4B697DDC /* [CP] Check Pods Manifest.lock */,
 				155F9D4E22821FC9001CB901 /* Resources */,
 				155F9D7222821FCB001CB901 /* Embed App Extensions */,
+				9E3E27A9831C97A2584061B2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 155F9D6F22821FCB001CB901 /* Build configuration list for PBXNativeTarget "BitPrice WatchKit Extension" */;
 			buildPhases = (
+				53A08D4EB403E430306914CE /* [CP] Check Pods Manifest.lock */,
 				155F9D5B22821FCA001CB901 /* Sources */,
 				155F9D5C22821FCA001CB901 /* Frameworks */,
 				155F9D5D22821FCA001CB901 /* Resources */,
+				647A8A352F5FE4F7A27AAB19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +343,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34076828FE43701CD0040039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitPrice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53A08D4EB403E430306914CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitPrice WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		647A8A352F5FE4F7A27AAB19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitPrice WatchKit Extension/Pods-BitPrice WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitPrice WatchKit Extension/Pods-BitPrice WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitPrice WatchKit Extension/Pods-BitPrice WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A4CB7CF380ABAD4B697DDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitPrice WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		155F9D3A22821FC8001CB901 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,8 +443,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15339DB2229B2422002105B2 /* CoinsData.swift in Sources */,
 				155F9D6722821FCA001CB901 /* ExtensionDelegate.swift in Sources */,
 				155F9D6522821FCA001CB901 /* InterfaceController.swift in Sources */,
+				15339DB1229B2422002105B2 /* Coin.swift in Sources */,
 				155F9D6922821FCA001CB901 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +612,7 @@
 		};
 		155F9D7022821FCB001CB901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61EB5AC4498535E2E1E7D3AA /* Pods-BitPrice WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +635,7 @@
 		};
 		155F9D7122821FCB001CB901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837C57789A54D4FEF475F755 /* Pods-BitPrice WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +658,7 @@
 		};
 		155F9D7422821FCB001CB901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC76F2A226CED803F693F14D /* Pods-BitPrice WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -528,6 +678,7 @@
 		};
 		155F9D7522821FCB001CB901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1EA97A57127C05C05C8C0B /* Pods-BitPrice WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -547,6 +698,7 @@
 		};
 		155F9D7822821FCB001CB901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F293B001159658575F3F4E02 /* Pods-BitPrice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +717,7 @@
 		};
 		155F9D7922821FCB001CB901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 479F9DC370C4CCB76ABE035D /* Pods-BitPrice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
