@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15339DB1229B2422002105B2 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15339DAF229B2422002105B2 /* Coin.swift */; };
-		15339DB2229B2422002105B2 /* CoinsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15339DB0229B2422002105B2 /* CoinsData.swift */; };
 		155F9D4222821FC8001CB901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D4122821FC8001CB901 /* AppDelegate.swift */; };
 		155F9D4422821FC8001CB901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D4322821FC8001CB901 /* ViewController.swift */; };
 		155F9D4722821FC8001CB901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155F9D4522821FC8001CB901 /* Main.storyboard */; };
@@ -22,6 +20,7 @@
 		155F9D6722821FCA001CB901 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D6622821FCA001CB901 /* ExtensionDelegate.swift */; };
 		155F9D6922821FCA001CB901 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9D6822821FCA001CB901 /* ComplicationController.swift */; };
 		155F9D6B22821FCB001CB901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155F9D6A22821FCB001CB901 /* Assets.xcassets */; };
+		15F51F2F229E9D3000880504 /* BTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F51F2E229E9D3000880504 /* BTC.swift */; };
 		495371916392DADFBF13ECD1 /* Pods_BitPrice_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D828C29EA03D742764B90586 /* Pods_BitPrice_WatchKit_App.framework */; };
 		D6F8A918F1909F2A0B427A71 /* Pods_BitPrice_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED3A866B525889EA10E922E /* Pods_BitPrice_WatchKit_Extension.framework */; };
 		DF9D9FDE42EA48360A6F269E /* Pods_BitPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFDB1FA3026578811856060 /* Pods_BitPrice.framework */; };
@@ -70,8 +69,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		15339DAF229B2422002105B2 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		15339DB0229B2422002105B2 /* CoinsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsData.swift; sourceTree = "<group>"; };
 		155F9D3E22821FC8001CB901 /* BitPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		155F9D4122821FC8001CB901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		155F9D4322821FC8001CB901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +86,7 @@
 		155F9D6822821FCA001CB901 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		155F9D6A22821FCB001CB901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155F9D6C22821FCB001CB901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F51F2E229E9D3000880504 /* BTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTC.swift; sourceTree = "<group>"; };
 		1ED3A866B525889EA10E922E /* Pods_BitPrice_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPrice_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		479F9DC370C4CCB76ABE035D /* Pods-BitPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.release.xcconfig"; path = "Target Support Files/Pods-BitPrice/Pods-BitPrice.release.xcconfig"; sourceTree = "<group>"; };
 		5F1EA97A57127C05C05C8C0B /* Pods-BitPrice WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-BitPrice WatchKit App/Pods-BitPrice WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,8 +174,7 @@
 		155F9D6322821FCA001CB901 /* BitPrice WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				15339DAF229B2422002105B2 /* Coin.swift */,
-				15339DB0229B2422002105B2 /* CoinsData.swift */,
+				15F51F2E229E9D3000880504 /* BTC.swift */,
 				155F9D6422821FCA001CB901 /* InterfaceController.swift */,
 				155F9D6622821FCA001CB901 /* ExtensionDelegate.swift */,
 				155F9D6822821FCA001CB901 /* ComplicationController.swift */,
@@ -197,7 +194,6 @@
 				61EB5AC4498535E2E1E7D3AA /* Pods-BitPrice WatchKit Extension.debug.xcconfig */,
 				837C57789A54D4FEF475F755 /* Pods-BitPrice WatchKit Extension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -443,10 +439,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15339DB2229B2422002105B2 /* CoinsData.swift in Sources */,
 				155F9D6722821FCA001CB901 /* ExtensionDelegate.swift in Sources */,
 				155F9D6522821FCA001CB901 /* InterfaceController.swift in Sources */,
-				15339DB1229B2422002105B2 /* Coin.swift in Sources */,
+				15F51F2F229E9D3000880504 /* BTC.swift in Sources */,
 				155F9D6922821FCA001CB901 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

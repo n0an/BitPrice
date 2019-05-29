@@ -9,21 +9,36 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var usdPriceLabel: WKInterfaceLabel!
+    @IBOutlet weak var rubPriceLabel: WKInterfaceLabel!
+
+    @IBOutlet weak var updatingLabel: WKInterfaceLabel!
+    
+    var formatter: NumberFormatter!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-//        CoinsData.shared.getPricesForAllCoins()
-        
-        getPrice()
-        
+
+        formatter = NumberFormatter()
+        formatter.numberStyle = .currency
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        if let data = UserDefaults.standard.object(forKey: "btcPrice") as? Data {
+            let decoder = JSONDecoder()
+            
+            if let btc = try? decoder.decode(BTC.self, from: data) {
+                self.presentPrices(btc: btc)
+            }
+        }
+        
+        updatingLabel.setText("Updating...")
+
+        getPrice()
     }
     
     func getPrice() {
@@ -38,23 +53,26 @@ class InterfaceController: WKInterfaceController {
             
             guard let data = data else { return }
             
-            guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else { return }
+            let decoder = JSONDecoder()
+            
+            guard let btc = try? decoder.decode(BTC.self, from: data) else { return }
             
             
-            print(json)
+            self.presentPrices(btc: btc)
             
+            UserDefaults.standard.set(data, forKey: "btcPrice")
             
         }.resume()
     }
-
-}
-
-extension InterfaceController: CoinsDataDelegate {
-    func newPrices() {
+    
+    func presentPrices(btc: BTC) {
+        formatter.locale = Locale(identifier: "en_US")
+        self.usdPriceLabel.setText(formatter.string(from: btc.usdPrice as NSNumber))
         
+        formatter.locale = Locale(identifier: "ru_RU")
+        self.rubPriceLabel.setText(formatter.string(from: btc.rubPrice as NSNumber))
         
-        
-        
+        self.updatingLabel.setText("")
     }
 }
 

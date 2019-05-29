@@ -14,14 +14,23 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BitPrice_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView width="0.59999999999999998" height="0.5" alignment="center" image="BTC" contentMode="scaleAspectFit" id="Xr4-rh-ap2"/>
+                        <imageView width="70" height="59" alignment="center" image="BTC" contentMode="scaleAspectFit" id="Xr4-rh-ap2"/>
                         <label alignment="center" text="$5700.12" textAlignment="left" minimumScaleFactor="0.5" id="oUn-Tc-sSN">
-                            <fontDescription key="font" type="boldSystem" pointSize="34"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                        </label>
+                        <label alignment="center" text="$5700.12" textAlignment="left" minimumScaleFactor="0.5" id="zR1-9k-voA">
+                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
                         </label>
                         <label alignment="center" text="Updating..." id="FHW-MM-fF9"/>
                     </items>
+                    <connections>
+                        <outlet property="rubPriceLabel" destination="zR1-9k-voA" id="PDA-QA-S4O"/>
+                        <outlet property="updatingLabel" destination="FHW-MM-fF9" id="DQr-cI-NF4"/>
+                        <outlet property="usdPriceLabel" destination="oUn-Tc-sSN" id="ZF1-hj-OoE"/>
+                    </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="33" y="100"/>
         </scene>
     </scenes>
 </document>
