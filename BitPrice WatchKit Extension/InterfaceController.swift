@@ -62,6 +62,13 @@ class InterfaceController: WKInterfaceController {
             
             UserDefaults.standard.set(data, forKey: "btcPrice")
             
+            guard let complications = CLKComplicationServer.sharedInstance().activeComplications else { return }
+            
+            for comp in complications {
+                CLKComplicationServer.sharedInstance().reloadTimeline(for: comp)
+                
+            }
+            
         }.resume()
     }
     
