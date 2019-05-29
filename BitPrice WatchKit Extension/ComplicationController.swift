@@ -41,7 +41,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             if complication.family == .modularSmall {
                 let template = CLKComplicationTemplateModularSmallStackText()
                 template.line1TextProvider = CLKSimpleTextProvider(text: "BIT")
-                template.line2TextProvider = CLKSimpleTextProvider(text: "\(btc.usdPrice)")
+                template.line2TextProvider = CLKSimpleTextProvider(text: "\(Int(btc.usdPrice))")
                 
                 let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
                 handler(entry)
